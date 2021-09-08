@@ -5,7 +5,7 @@ detA = det(A)  # Find Determinant
 if(detA != 0), 
   C = [A,I]     # Append Identity Matrix
   reducedC = rref(C) # Find Rref of augmented matrix
-  invertedA = reducedC(:,7:2*n)  # Inverse(A) = invertedA
+  invertedA = reducedC(:,n+1:2*n)  # Inverse(A) = invertedA
 else
   disp("A is singular");
 endif
